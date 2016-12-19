@@ -228,7 +228,7 @@ function refresh() {
 //These are event Listener
 	
 	$(".box").on("click", function() {
-		if(!player[actualplayer].computer && !finish) {
+		if(!player[actualplayer].computer && !finish && !$(this).hasClass("filled")) {
 			play($(this));
 		}
 	});
